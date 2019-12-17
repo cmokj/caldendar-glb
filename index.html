@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>caldendar-glb</title>
+    <style>
+        *,*::before,*::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .icon {
+            width: 2em; height: 2em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+        .app {
+            width: 360px;
+            height: 100vh;
+            border: 1px solid red;
+        }
+        header {
+            height: 12%;
+            background-color: #333;
+        }
+        main {
+            height: 80%;
+        }
+        footer {
+            height: 8%;
+            background-color: #fff;
+            border-top: 1px solid #e3e3e3;
+            box-shadow: 0px -2px 2px 0px rgba(227,227,227,0.56);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        footer > .item {
+            color: #bcbcbc;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <header>11</header>
+        <main>22</main>
+        <footer>
+            <button class="item">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-lightning"></use>
+                </svg>
+                <span>工作</span>
+            </button>
+            <button class="item">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-role"></use>
+                </svg>
+                <span>角色</span>
+            </button>
+            <button class="item">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-circle"></use>
+                </svg>
+                <span>事项圈</span>
+            </button>
+            <button class="item">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-collage"></use>
+                </svg>
+                <span>同事</span>
+            </button>
+            <button class="item" style="color: #2a579a;">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-cal"></use>
+                </svg>
+                <span>日历</span>
+            </button>
+        </footer>
+    </div>
+    <script src="//at.alicdn.com/t/font_1567546_qv3cnl2vayk.js"></script>
+</body>
+</html>
