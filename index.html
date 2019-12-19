@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>calendar-glb</title>
-    <style>
+    <style lang="scss">
         *,*::before,*::after {
             box-sizing: border-box;
             margin: 0;
@@ -18,10 +18,9 @@
             fill: currentColor;
             overflow: hidden;
         }
-        .app {
+        #app {
             width: 360px;
             height: 100vh;
-            border: 1px solid red;
         }
         header {
             height: 12%;
@@ -34,12 +33,12 @@
             height: 8%;
             background-color: #fff;
             border-top: 1px solid #e3e3e3;
-            box-shadow: 0px -2px 2px 0px rgba(227,227,227,0.56);
+            box-shadow: 0px -2px 2px 0px rgba(227, 227, 227, 0.56);
             display: flex;
             justify-content: space-around;
             align-items: center;
         }
-        footer > .item {
+        .item {
             color: #bcbcbc;
             background-color: transparent;
             border: none;
@@ -51,9 +50,13 @@
     </style>
 </head>
 <body>
-    <div class="app">
-        <header>11</header>
-        <main>22</main>
+    <div id="app">
+        <header>
+            <div>{{selectedDate}}</div>
+        </header>
+        <main>
+            <g-cal></g-cal>
+        </main>
         <footer>
             <button class="item">
                 <svg class="icon" aria-hidden="true">
@@ -88,5 +91,6 @@
         </footer>
     </div>
     <script src="//at.alicdn.com/t/font_1567546_qv3cnl2vayk.js"></script>
+    <script src="./src/app.js"></script>
 </body>
 </html>
